@@ -34,21 +34,21 @@ For now needs mochad pre-installed, this will be automated in an update.
 
 ## Usage
     
-    Français
+   Français
     
-    ```
-    Vous: allume le bar
-    Jarvis: J'allume le bar...
-    # > echo "pl A3 on" | nc localhost 1099
-    ```
+   ```
+   Vous: allume le bar
+   Jarvis: J'allume le bar...
+   # > echo "pl A3 on" | nc localhost 1099
+   ```
     
-    English
+   English
     
-    ```
-    You: turn on the bar
-    Jarvis: Switching on the bar...
-    # > echo "pl A3 on" | nc localhost 1099
-    ```
+   ```
+   You: turn on the bar
+   Jarvis: Switching on the bar...
+   # > echo "pl A3 on" | nc localhost 1099
+   ```
 
 ## Author
 [alexylem](https://github.com/alexylem)
