@@ -13,6 +13,7 @@ For multi-language plugin:
 This plugin uses mochad to control your X10 devices.
 It will allow you to simply turn on and off your devices.
 For now needs mochad pre-installed, this will be automated in an update.
+See https://www.domoticz.com/wiki/X10_devices,_CM15_Pro
 
 ## Configuration
 
