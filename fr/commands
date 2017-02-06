@@ -1,0 +1,2 @@
+*ALLUM[^ ]+ (*)==pg_x10_turn on "(1)"
+*ETEIN[^ ]+ (*)==pg_x10_turn off "(1)"
