@@ -9,7 +9,7 @@ pg_x10_turn () {
         if [[ "$order" =~ .*$sdevice.* ]]; then
             local address="$(echo $pg_hc_config | jq -r ".devices[] | select(.name==\"$device\") | .address")"
             say "$(pg_x10_lg "switching_on" "$2")..."
-            local cmd="pl $address $1 | nc localhost $pg_x10_mochad_port"
+            local cmd="echo \"pl $address $1\" | nc localhost $pg_x10_mochad_port"
             $verbose && jv_debug "$> $cmd"
             eval $cmd # safe: cmd does not contain user input ($2)
             return $?
