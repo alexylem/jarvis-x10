@@ -35,6 +35,7 @@ For now needs mochad pre-installed, this will be automated in an update.
 ## Usage
     
     Français
+    
     ```
     Vous: allume le bar
     Jarvis: J'allume le bar...
@@ -42,6 +43,7 @@ For now needs mochad pre-installed, this will be automated in an update.
     ```
     
     English
+    
     ```
     You: turn on the bar
     Jarvis: Switching on the bar...
