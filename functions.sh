@@ -10,7 +10,7 @@ pg_x10_turn () {
             say "$(pg_x10_lg "switching_$1" "$2")"
             local cmd="echo \"pl $address $1\" | nc localhost $pg_x10_mochad_port"
             $verbose && jv_debug "$> $cmd"
-            eval $cmd # safe: cmd does not contain user input ($2)
+            eval $cmd | while read line; do jv_debug "$line"; done # safe as no user input in $cmd. pass each output line to jv_debug
             return $?
         fi
     done <<< "$(echo $pg_x10_config | jq -r '.devices[].name')"
